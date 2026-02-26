@@ -1,6 +1,6 @@
-# POE_MODULE
+## 1. Introduction
 A 100-W Power over Ethernet (PoE) module for device power supply and Ethernet data transmission.
-## Key Components:
+## 2. Key Components:
 7499511420 WÜRTH - PoE++ Ethernet connector with an integrated transformer, rated for 100 W power.
 PSM040-100MSE - MOSFETs forming active ideal bridge rectifier circuits.
 LT4321 - dual ideal bridge controller for PoE applications.
@@ -9,7 +9,7 @@ LT4275 - PoE controller.
 
 <a href="schematics/POE_MODULE_SCH.png"><img src="schematics/POE_MODULE_SCH.png" width=75% height=75%  ></a>
 
-## PCB
+## 3. PCB
 The designed PCB is divided into two independent functional blocks: PoE and AUX.
 The PoE section provides the primary power supply compliant with the Power over Ethernet standard, while the AUX section serves as an alternative, redundant power source intended for operation in the absence of power from the PSE device or in the event of a PoE path failure.
 
@@ -25,9 +25,9 @@ Ethernet signal traces were designed with controlled impedance in accordance wit
 <a href="schematics/POE_MODULE_PCB.png"><img src="schematics/POE_MODULE_PCB.png" width=75% height=75%  ></a>
 <a href="schematics/POE_MODULE_3D.png"><img src="schematics/POE_MODULE_3D.png" width=75% height=75%  ></a>
 
-## TEST
+## 4. TEST
 Due to the high cost of components required to support the full 100 W power level, the current version of the module has been configured for a maximum output power of 25 W. This allowed verification of the power-supply architecture, the PoE power path, and the overall design assumptions while keeping prototyping costs under control.
 For testing purposes, an Ethernet connector compliant with PoE Type 2 was used, enabling safe functional testing and validation of system behavior under conditions corresponding to a lower power class. Configuration of the PoE controller operating parameters is achieved by adjusting the values of the configuration resistors.
 
-<a href="schematics/POE_MODULE_TEST_POE.png"><img src="schematics/POE_MODULE_TEST_POE.png" width=75% height=75%  ></a>
-<a href="schematics/POE_MODULE_TEST_AUX.png"><img src="schematics/POE_MODULE_TEST_AUX.png" width=75% height=75%  ></a>
+<a href="schematics/POE_MODULE_TEST_POE.jpg"><img src="schematics/POE_MODULE_TEST_POE.jpg" width=75% height=75%  ></a>
+<a href="schematics/POE_MODULE_TEST_AUX.jpg"><img src="schematics/POE_MODULE_TEST_AUX.jpg" width=75% height=75%  ></a>
