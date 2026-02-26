@@ -1,11 +1,11 @@
 ## 1. Introduction
 A 100-W Power over Ethernet (PoE) module for device power supply and Ethernet data transmission.
 ## 2. Key Components:
-7499511420 WÜRTH - PoE++ Ethernet connector with an integrated transformer, rated for 100 W power.
-PSM040-100MSE - MOSFETs forming active ideal bridge rectifier circuits.
-LT4321 - dual ideal bridge controller for PoE applications.
-LT4320 - single ideal bridge controller, used for the auxiliary power section.
-LT4275 - PoE controller.
+- 7499511420 WÜRTH - PoE++ Ethernet connector with an integrated transformer, rated for 100 W power.
+- PSM040-100MSE - MOSFETs forming active ideal bridge rectifier circuits.
+- LT4321 - dual ideal bridge controller for PoE applications.
+- LT4320 - single ideal bridge controller, used for the auxiliary power section.
+- LT4275 - PoE controller.
 
 <a href="schematics/POE_MODULE_SCH.png"><img src="schematics/POE_MODULE_SCH.png" width=75% height=75%  ></a>
 
@@ -22,7 +22,7 @@ To improve energy efficiency and reduce power losses, active bridge rectifiers w
 The use of widened power traces and connection of three connector pins for each power rail ensures safe and stable current flow of up to 1 A without excessive voltage drops or local trace overheating.
 Ethernet signal traces were designed with controlled impedance in accordance with differential transmission requirements. Trace widths and spacing between differential pairs were selected to ensure proper characteristic impedance, minimizing signal reflections and preserving signal integrity.
 
-<a href="schematics/POE_MODULE_PCB.png"><img src="schematics/POE_MODULE_PCB.png" width=75% height=75%  ></a>
+<a href="schematics/POE_MODULE_PCB.png"><img src="schematics/POE_MODULE_PCB.png" width=75% height=75%   ></a>
 <a href="schematics/POE_MODULE_3D.png"><img src="schematics/POE_MODULE_3D.png" width=75% height=75%  ></a>
 
 ## 4. TEST
@@ -30,4 +30,4 @@ Due to the high cost of components required to support the full 100 W power leve
 For testing purposes, an Ethernet connector compliant with PoE Type 2 was used, enabling safe functional testing and validation of system behavior under conditions corresponding to a lower power class. Configuration of the PoE controller operating parameters is achieved by adjusting the values of the configuration resistors.
 
 <a href="schematics/POE_MODULE_TEST_POE.jpg"><img src="schematics/POE_MODULE_TEST_POE.jpg" width=75% height=75%  ></a>
-<a href="schematics/POE_MODULE_TEST_AUX.jpg"><img src="schematics/POE_MODULE_TEST_AUX.jpg" width=75% height=75%  ></a>
+<a href="schematics/POE_MODULE_TEST_AUX.jpg"><img src="schematics/POE_MODULE_TEST_AUX.jpg" width=75% height=75% style="transform:rotate(90deg);"></a>
